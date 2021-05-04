@@ -8,7 +8,6 @@ import { CarouselComponent } from './carousel/carousel.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent,
     CarouselComponent
   ],
   imports: [
