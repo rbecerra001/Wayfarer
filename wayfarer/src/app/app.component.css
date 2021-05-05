@@ -1,0 +1,18 @@
+.box {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  border-left: 5px red;
+}
+
+.one {
+  flex: 1 1 auto;
+}
+
+.two {
+  flex: 1 1 auto;
+}
+
+.three {
+  flex: 1 1 auto;
+}
