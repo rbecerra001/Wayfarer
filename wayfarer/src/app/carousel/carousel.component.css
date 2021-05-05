@@ -1,0 +1,14 @@
+ngb-carousel .wrapper {
+  position: relative;
+  height: 500px;
+  padding-top: 55%;
+}
+
+ngb-carousel .wrapper>img {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+ margin-bottom: 25%;
+  right: 10%;
+  width: 80%;
+}
