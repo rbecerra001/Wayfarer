@@ -7,8 +7,7 @@ import { LondonComponent } from './details-page/cities/london/london.component';
 import { SydneyComponent } from './details-page/cities/sydney/sydney.component';
 import { SanFrancisoComponent } from './details-page/cities/san-franciso/san-franciso.component';
 import { SeattleComponent } from './details-page/cities/seattle/seattle.component';
-
-
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,10 +20,27 @@ import { SeattleComponent } from './details-page/cities/seattle/seattle.componen
     SeattleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot([
+      {
+        path: 'london',
+        component: LondonComponent
+      },
+      {
+        path: 'san-francisco',
+        component: SanFrancisoComponent
+      },
+      {
+        path: 'seattle',
+        component: SeattleComponent
+      },
+      {
+        path: 'sydney',
+        component: SydneyComponent
+      }
+    ])
   ],
   exports: [
-
     CitiesComponent,
     CityDetailsComponent,
     LondonComponent,

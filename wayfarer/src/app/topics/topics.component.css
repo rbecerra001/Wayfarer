@@ -3,6 +3,7 @@
   margin-right: auto;
   margin-left: auto;
   border-left: 5px red;
+  flex: 1 1 auto;
 }
 
 .one {
@@ -14,5 +15,9 @@
 }
 
 .three {
+  flex: 1 1 auto;
+}
+
+.four {
   flex: 1 1 auto;
 }
