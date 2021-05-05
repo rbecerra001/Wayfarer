@@ -1,36 +1,12 @@
 <p>carousel works!</p>
 <div class="container-fluid">
   <ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
+    <ng-template *ngFor="let image of images, index as i" ngbSlide>
       <div class="wrapper">
-        <img [src]="images[0]" alt=" ">
+        <img [src]="image" alt=" ">
       </div>
       <div class="carousel-caption">
-        <h3>London</h3>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img [src]="images[1]" alt=" ">
-      </div>
-      <div class="carousel-caption">
-        <h3>Sen Diego</h3>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img [src]="images[2]"  alt="">
-      </div>
-      <div class="carousel-caption">
-        <h3>San Francisco</h3>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="wrapper">
-        <img [src]="images[3]"  alt="">
-      </div>
-      <div class="carousel-caption">
-        <h3>Seattle</h3>
+        <h3>{{cityNames[i]}}</h3>
       </div>
     </ng-template>
   </ngb-carousel>
