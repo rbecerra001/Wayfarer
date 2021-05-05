@@ -7,7 +7,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { TopicsComponent } from './topics/topics.component';
-import { DetailPageComponent } from './src/app/details-module/detail-page/detail-page.component';
+import { DetailsPageComponent} from "./details-module/details-page/details-page.component";
+import { DetailsModuleModule } from "./details-module/details-module.module";
 
 
 @NgModule({
@@ -16,12 +17,14 @@ import { DetailPageComponent } from './src/app/details-module/detail-page/detail
     CarouselComponent,
     HeaderComponent,
     TopicsComponent,
-    DetailPageComponent
+    DetailsPageComponent
+
  ],
   imports: [
     BrowserModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DetailsModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

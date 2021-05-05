@@ -12,7 +12,7 @@ import { SeattleComponent } from './details-page/cities/seattle/seattle.componen
 
 @NgModule({
   declarations: [
-    DetailsPageComponent,
+    // DetailsPageComponent,
     CitiesComponent,
     CityDetailsComponent,
     LondonComponent,
@@ -22,6 +22,16 @@ import { SeattleComponent } from './details-page/cities/seattle/seattle.componen
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+
+    CitiesComponent,
+    CityDetailsComponent,
+    LondonComponent,
+    SydneyComponent,
+    SanFrancisoComponent,
+    SeattleComponent
+
   ]
 })
 export class DetailsModuleModule { }
