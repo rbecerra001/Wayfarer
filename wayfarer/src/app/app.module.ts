@@ -10,6 +10,7 @@ import { DetailsPageComponent} from './details-module/details-page/details-page.
 import { DetailsModuleModule } from './details-module/details-module.module';
 import { RouterModule } from '@angular/router';
 import { CitiesComponent } from './details-module/details-page/cities/cities.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CitiesComponent } from './details-module/details-page/cities/cities.com
     CarouselComponent,
     HeaderComponent,
     TopicsComponent,
-    DetailsPageComponent
+    DetailsPageComponent,
+    HomepageComponent
  ],
   imports: [
     BrowserModule,
@@ -28,6 +30,9 @@ import { CitiesComponent } from './details-module/details-page/cities/cities.com
       {
         path: 'cities',
         component: DetailsPageComponent
+      }, {
+        path: '',
+        component: HomepageComponent
       }
     ])
   ],
