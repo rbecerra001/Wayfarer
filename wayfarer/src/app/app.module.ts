@@ -11,6 +11,10 @@ import { DetailsModuleModule } from './details-module/details-module.module';
 import { RouterModule } from '@angular/router';
 import { CitiesComponent } from './details-module/details-page/cities/cities.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import {SeattleComponent} from './details-module/details-page/cities/seattle/seattle.component';
+import {LondonComponent} from './details-module/details-page/cities/london/london.component';
+import {SanFrancisoComponent} from './details-module/details-page/cities/san-franciso/san-franciso.component';
+import {SydneyComponent} from './details-module/details-page/cities/sydney/sydney.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,25 @@ import { HomepageComponent } from './homepage/homepage.component';
     RouterModule.forRoot([
       {
         path: 'cities',
-        component: DetailsPageComponent
+        component: DetailsPageComponent,
+        children: [
+          {
+            path: 'seattle',
+            component: SeattleComponent
+          },
+          {
+            path: 'london',
+            component: LondonComponent
+          },
+          {
+            path: 'san-francisco',
+            component: SanFrancisoComponent
+          },
+          {
+            path: 'sydney',
+            component: SydneyComponent
+          }
+        ]
       }, {
         path: '',
         component: HomepageComponent

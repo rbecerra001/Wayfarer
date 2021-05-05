@@ -9,7 +9,6 @@ export const CITIES = [
       description: 'A regal city surrounded by a rush of modern life. London is layered with history, where medieval and Victorian complement a rich and vibrant modern world.'
     }]
   },
-
   {
     name: 'Sydney',
     country: 'Australia',
@@ -33,12 +32,12 @@ export const CITIES = [
   {
     name: 'Seattle',
     country: 'United States',
-    image: 'src/app/assets/images/seattleTiny.jpeg',
+    image: 'src/assets/images/seattleTiny.jpeg',
     posts: [{
-      image: 'src/app/assets/images/SeattleTiny.jpeg',
+      image: 'src/assets/images/SeattleTiny.jpeg',
       title: 'Title',
       description: 'Seattle a seaport city on the West Coast of the United States. It is the seat of King County, Washington.'
     }]
-  }]
+  }];
 
 
