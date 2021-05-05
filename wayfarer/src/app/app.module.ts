@@ -7,6 +7,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { TopicsComponent } from './topics/topics.component';
+import { DetailPageComponent } from './src/app/details-module/detail-page/detail-page.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TopicsComponent } from './topics/topics.component';
     AppComponent,
     CarouselComponent,
     HeaderComponent,
-    TopicsComponent
+    TopicsComponent,
+    DetailPageComponent
  ],
   imports: [
     BrowserModule,
