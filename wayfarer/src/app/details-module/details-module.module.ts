@@ -22,22 +22,6 @@ import {RouterModule} from '@angular/router';
   imports: [
     CommonModule,
     RouterModule.forRoot([
-      {
-        path: 'london',
-        component: LondonComponent
-      },
-      {
-        path: 'san-francisco',
-        component: SanFrancisoComponent
-      },
-      {
-        path: 'seattle',
-        component: SeattleComponent
-      },
-      {
-        path: 'sydney',
-        component: SydneyComponent
-      }
     ])
   ],
   exports: [
