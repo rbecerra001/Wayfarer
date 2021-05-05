@@ -1,23 +1,27 @@
 .box {
   display: flex;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
-  border-left: 5px red;
-  flex: 1 1 auto;
+  font-size: large;
 }
 
 .one {
   flex: 1 1 auto;
+  border: 7px solid #000;
 }
 
 .two {
   flex: 1 1 auto;
+  border: 7px solid #000;
 }
 
 .three {
   flex: 1 1 auto;
+  border: 7px solid #000;
 }
 
 .four {
   flex: 1 1 auto;
+  border: 7px solid #000;
 }
