@@ -6,12 +6,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
+import { TopicsComponent } from './topics/topics.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
-    HeaderComponent
+    HeaderComponent,
+    TopicsComponent
  ],
   imports: [
     BrowserModule,
