@@ -7,7 +7,7 @@ import { CITIES} from './datadetails';
   styleUrls: ['./cities.component.css']
 })
 export class CitiesComponent implements OnInit {
-  city = CITIES;
+  cities = CITIES;
   constructor() { }
 
   ngOnInit(): void {

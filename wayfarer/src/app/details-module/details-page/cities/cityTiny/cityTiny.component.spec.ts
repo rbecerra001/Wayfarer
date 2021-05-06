@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LondonComponent } from './london.component';
+import { CityTinyComponent } from './cityTiny.component';
 
-describe('LondonComponent', () => {
-  let component: LondonComponent;
-  let fixture: ComponentFixture<LondonComponent>;
+describe('SeattleComponent', () => {
+  let component: CityTinyComponent;
+  let fixture: ComponentFixture<CityTinyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LondonComponent ]
+      declarations: [ CityTinyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LondonComponent);
+    fixture = TestBed.createComponent(CityTinyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

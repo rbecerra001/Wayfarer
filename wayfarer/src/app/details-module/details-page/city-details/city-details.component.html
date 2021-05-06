@@ -1,1 +1,19 @@
-<p>city-details works!</p>
+<div id="container" *ngIf="city">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title">{{city.name}}</h2>
+          <h3>{{city.country}}</h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img [src]="city.image" class="card-img" alt="...">
+      </div>
+      <div class="posts">
+        <h2>Posts</h2>
+        <app-post *ngFor="let post of city.posts" [post]="post"></app-post>
+      </div>
+    </div>
+  </div>
+</div>

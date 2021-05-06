@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import { CITIES } from '../details-module/details-page/cities/datadetails';
 
 @Component({
   selector: 'app-carousel',
@@ -8,8 +9,7 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig]
 })
 export class CarouselComponent {
-  cityNames = ['London', 'SanDiego', 'SanFrancisco', 'Seattle'];
-  images = this.cityNames.map((name) => `../../../assets/images/${name}.jpeg`);
+  cities = CITIES;
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 2000;

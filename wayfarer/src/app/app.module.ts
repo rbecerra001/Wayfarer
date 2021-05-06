@@ -11,10 +11,8 @@ import { DetailsModuleModule } from './details-module/details-module.module';
 import { RouterModule } from '@angular/router';
 import { CitiesComponent } from './details-module/details-page/cities/cities.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import {SeattleComponent} from './details-module/details-page/cities/seattle/seattle.component';
-import {LondonComponent} from './details-module/details-page/cities/london/london.component';
-import {SanFrancisoComponent} from './details-module/details-page/cities/san-franciso/san-franciso.component';
-import {SydneyComponent} from './details-module/details-page/cities/sydney/sydney.component';
+import {CityTinyComponent} from './details-module/details-page/cities/cityTiny/cityTiny.component';
+import {CityDetailsComponent} from "./details-module/details-page/city-details/city-details.component";
 
 @NgModule({
   declarations: [
@@ -33,25 +31,17 @@ import {SydneyComponent} from './details-module/details-page/cities/sydney/sydne
     RouterModule.forRoot([
       {
         path: 'cities',
+        component: DetailsPageComponent
+      },
+      {
+        path: 'city/:id',
         component: DetailsPageComponent,
-        children: [
-          {
-            path: 'seattle',
-            component: SeattleComponent
-          },
-          {
-            path: 'london',
-            component: LondonComponent
-          },
-          {
-            path: 'san-francisco',
-            component: SanFrancisoComponent
-          },
-          {
-            path: 'sydney',
-            component: SydneyComponent
-          }
-        ]
+        // children: [
+        //   {
+        //     path: ':id',
+        //     component: DetailsPageComponent
+        //   }
+        // ]
       }, {
         path: '',
         component: HomepageComponent

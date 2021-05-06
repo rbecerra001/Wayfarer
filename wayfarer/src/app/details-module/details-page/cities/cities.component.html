@@ -1,11 +1,16 @@
-<div>
-  <ul>
-    <li><a routerLink="seattle">Seattle</a></li>
-    <li><a routerLink="san-francisco">San Francisco</a></li>
-    <li><a routerLink="london">London</a></li>
-    <li><a routerLink="sydney">sydney</a></li>
-  </ul>
+<!--<div>-->
+<!--  <ul>-->
+<!--    <li><a routerLink="seattle">Seattle</a></li>-->
+<!--    <li><a routerLink="san-francisco">San Francisco</a></li>-->
+<!--    <li><a routerLink="london">London</a></li>-->
+<!--    <li><a routerLink="sydney">sydney</a></li>-->
+<!--  </ul>-->
+<!--</div>-->
+
+<!--<router-outlet></router-outlet>-->
+<div class="container">
+  <h1>Cities</h1>
+  <a *ngFor="let city of cities; index as i" routerLink="/city/{{i + 1}}">
+    <app-city-tiny [city] ="city"></app-city-tiny>
+  </a>
 </div>
-
-<router-outlet></router-outlet>
-
