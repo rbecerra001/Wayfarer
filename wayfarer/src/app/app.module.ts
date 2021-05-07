@@ -14,6 +14,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import {CityTinyComponent} from './details-module/details-page/cities/cityTiny/cityTiny.component';
 import {CityDetailsComponent} from "./details-module/details-page/city-details/city-details.component";
 import {PostComponent} from "./details-module/details-page/city-details/post/post.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {PostComponent} from "./details-module/details-page/city-details/post/pos
     NgbModule,
     BrowserAnimationsModule,
     DetailsModuleModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: 'cities',
@@ -43,7 +45,8 @@ import {PostComponent} from "./details-module/details-page/city-details/post/pos
             component: PostComponent
           }
         ]
-      }, {
+      },
+      {
         path: '',
         component: HomepageComponent
       }

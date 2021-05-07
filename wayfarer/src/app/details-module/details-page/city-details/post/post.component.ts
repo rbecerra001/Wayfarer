@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import {ActivatedRoute} from "@angular/router";
 import {CITIES} from "../../cities/datadetails";
+
 
 @Component({
   selector: 'app-post',

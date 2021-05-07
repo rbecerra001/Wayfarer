@@ -5,10 +5,17 @@
         <div class="card-body">
           <h2 class="card-title">{{city.name}}</h2>
           <h3>{{city.country}}</h3>
+          <br>
+          <h6>Weather: </h6>
+
+          <h7>{{city?.weather?.description}}</h7>
+          <h7>  Max temp: {{city?.weather?.maxTemp}}</h7>
+          <h7>  Min temp: {{city?.weather?.minTemp}}</h7>
+
         </div>
       </div>
       <div class="col-md-4">
-        <img [src]="city.image" class="card-img" alt="...">
+        <img  class="card-img" [src]="city.image" alt="...">
       </div>
       <div class="posts">
         <h2>Posts</h2>
