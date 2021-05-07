@@ -16,10 +16,11 @@ export class CityDetailsComponent implements OnInit {
     this.route.paramMap
       .subscribe(params => {
         let id = parseInt(params.get('id'));
-        console.log(id);
         this.city = CITIES[id-1];
         this.city.posts = this.city.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    });
-  }
+        return this.city.id === parseInt(params.get('id'));
 
+    });
+
+  }
 }

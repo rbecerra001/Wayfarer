@@ -2,5 +2,5 @@
   display: grid;
   grid-template-columns: 35% 65%;
   grid-column-gap: 50px;
-  justify-content: space-evenly;
+
 }

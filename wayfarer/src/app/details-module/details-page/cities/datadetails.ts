@@ -1,5 +1,6 @@
 export const CITIES = [
   {
+    id: 1,
     name: 'London',
     country: 'United Kingdom',
     image: 'assets/images/londonTiny1.jpeg',
@@ -29,6 +30,7 @@ export const CITIES = [
     ]
   },
   {
+    id: 2,
     name: 'Sydney',
     country: 'Australia',
     image: 'assets/images/SydneyTiny.jpeg',
@@ -57,6 +59,7 @@ export const CITIES = [
     ]
   },
   {
+    id: 3,
     name: 'San Francisco',
     country: 'United States',
     image: 'assets/images/sanFranciscoTiny.jpeg',
@@ -85,6 +88,7 @@ export const CITIES = [
     ]
   },
   {
+    id: 4,
     name: 'Seattle',
     country: 'United States',
     image: 'assets/images/SeattleTiny.jpeg',

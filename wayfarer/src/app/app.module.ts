@@ -13,6 +13,7 @@ import { CitiesComponent } from './details-module/details-page/cities/cities.com
 import { HomepageComponent } from './homepage/homepage.component';
 import {CityTinyComponent} from './details-module/details-page/cities/cityTiny/cityTiny.component';
 import {CityDetailsComponent} from "./details-module/details-page/city-details/city-details.component";
+import {PostComponent} from "./details-module/details-page/city-details/post/post.component";
 
 @NgModule({
   declarations: [
@@ -31,17 +32,17 @@ import {CityDetailsComponent} from "./details-module/details-page/city-details/c
     RouterModule.forRoot([
       {
         path: 'cities',
-        component: DetailsPageComponent
-      },
-      {
-        path: 'city/:id',
         component: DetailsPageComponent,
-        // children: [
-        //   {
-        //     path: ':id',
-        //     component: DetailsPageComponent
-        //   }
-        // ]
+        children: [
+          {
+            path: ':id',
+            component: CityDetailsComponent
+          },
+          {
+            path: ':id/posts/:postId',
+            component: PostComponent
+          }
+        ]
       }, {
         path: '',
         component: HomepageComponent
