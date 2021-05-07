@@ -13,6 +13,7 @@ import { CitiesComponent } from './details-module/details-page/cities/cities.com
 import { HomepageComponent } from './homepage/homepage.component';
 import {CityTinyComponent} from './details-module/details-page/cities/cityTiny/cityTiny.component';
 import {CityDetailsComponent} from "./details-module/details-page/city-details/city-details.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {CityDetailsComponent} from "./details-module/details-page/city-details/c
     NgbModule,
     BrowserAnimationsModule,
     DetailsModuleModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: 'cities',
@@ -36,13 +38,8 @@ import {CityDetailsComponent} from "./details-module/details-page/city-details/c
       {
         path: 'city/:id',
         component: DetailsPageComponent,
-        // children: [
-        //   {
-        //     path: ':id',
-        //     component: DetailsPageComponent
-        //   }
-        // ]
-      }, {
+        },
+      {
         path: '',
         component: HomepageComponent
       }

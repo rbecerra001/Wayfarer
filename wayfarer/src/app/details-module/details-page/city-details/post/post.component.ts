@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CITIES } from '../../cities/datadetails';
 
 @Component({
   selector: 'app-post',
