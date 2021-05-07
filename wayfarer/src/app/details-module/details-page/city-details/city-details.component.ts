@@ -21,7 +21,7 @@ export class CityDetailsComponent implements OnInit {
           this.city = CITIES[id - 1];
 
           this.http
-            .get(`http://api.openweathermap.org/data/2.5/weather?zip=${this.city.zip},us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`)
+            .get(`http://api.openweathermap.org/data/2.5/weather?zip=${this.city.zip},us&appid=f07975f70fe183ab8289fe83f4a71fbd&units=imperial`)
             .subscribe(response => {
               console.log(response);
               let weatherResponse: any;
